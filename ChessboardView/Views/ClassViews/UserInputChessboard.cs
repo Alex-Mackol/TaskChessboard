@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskChessboard.Views.ClassViews
+namespace ChessboardView.Views.ClassViews
 {
     class UserInputChessboard
     {
@@ -12,15 +12,15 @@ namespace TaskChessboard.Views.ClassViews
         public string Heigth { get; set; }
         public UserInputChessboard()
         {
-            InputChessboard();
+            //InputChessboard();
         }
 
-        public void InputChessboard()
+        public void InputChessboard(out string width, out string heigth)
         {
             //Display.EnterData(EnterDataEnum.DataEnum.Width);
-            Width = Console.ReadLine();
+            width = Console.ReadLine();
             //Display.EnterData(EnterDataEnum.DataEnum.Heigth);
-            Heigth = Console.ReadLine();
+            heigth = Console.ReadLine();
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskChessboard.Views.InterfaceViews
+namespace ChessboardView.Views.InterfaceViews
 {
     public interface IDrawer
     {

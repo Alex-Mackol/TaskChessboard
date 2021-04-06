@@ -8,7 +8,7 @@ namespace TaskChessboard.Models.Enums
 {
     public enum ColorEnum
     {
-        colorWhite = '◻',
-        colorBlack = '\u2b1b'
+        colorWhite = '*',
+        colorBlack = '#'
     }
 }

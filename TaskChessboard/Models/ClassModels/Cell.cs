@@ -21,7 +21,7 @@ namespace TaskChessboard.Models.ClassModels
             {
                 case ColorEnum.colorWhite:
                     {
-                        res = '◻';
+                        res = '8';
                     }
                     break;
                 case ColorEnum.colorBlack:

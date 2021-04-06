@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9CBCBB0-5DC9-4B70-8EB8-05CDF8138144}</ProjectGuid>
+    <ProjectGuid>{FBC7D075-36A9-44F1-980B-FC00E1F0BA2C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TaskChessboard</RootNamespace>
-    <AssemblyName>TaskChessboard</AssemblyName>
+    <RootNamespace>ChessboardView</RootNamespace>
+    <AssemblyName>ChessboardView</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\ClassModels\Cell.cs" />
-    <Compile Include="Models\ClassModels\Chessboard.cs" />
-    <Compile Include="Models\Enums\ColorEnum.cs" />
-    <Compile Include="Models\InterfaceModels\ICell.cs" />
-    <Compile Include="Models\InterfaceModels\IChessboard.cs" />
+    <Compile Include="Controllers\ClassControllers\ChessboardController.cs" />
+    <Compile Include="Controllers\ClassControllers\Validator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ClassViews\UserInputChessboard.cs" />
+    <Compile Include="Views\ClassViews\ViewChessboard.cs" />
+    <Compile Include="Views\InterfaceViews\IDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TaskChessboard\TaskChessboard.csproj">
+      <Project>{b9cbcbb0-5dc9-4b70-8eb8-05cdf8138144}</Project>
+      <Name>TaskChessboard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\InterfacesControllers\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

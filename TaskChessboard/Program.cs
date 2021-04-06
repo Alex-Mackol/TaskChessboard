@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using TaskChessboard.Views.ClassViews;
+
 
 namespace TaskChessboard
 {
@@ -11,7 +11,7 @@ namespace TaskChessboard
         {
             //class viewcheesboard
             //class control 
-            ViewChessboard viewChessboard = new ViewChessboard();
+            //ViewChessboard viewChessboard = new ViewChessboard();
             //viewChessboard.chessboardController.InputChessboard();
         }
     }

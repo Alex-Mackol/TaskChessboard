@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 using TaskChessboard.Models.ClassModels;
-using TaskChessboard.Views.InterfaceViews;
-using TaskChessboard.Controllers.ClassControllers;
+using ChessboardView.Views.InterfaceViews;
+using ChessboardView.Controllers.ClassControllers;
 
-namespace TaskChessboard.Views.ClassViews
+namespace ChessboardView.Views.ClassViews
 {
-    class ViewChessboard : IDrawer
+    public class ViewChessboard : IDrawer
     {
         public Chessboard Chessboard { get; set; }
 
