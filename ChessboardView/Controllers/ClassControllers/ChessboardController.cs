@@ -36,7 +36,7 @@ namespace ChessboardView.Controllers.ClassControllers
             }
             else
             {
-                //bad
+                Console.WriteLine("Invalid format, please enter numbers in integer format!");
             }
         }
 
